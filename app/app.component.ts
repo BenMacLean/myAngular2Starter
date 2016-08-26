@@ -8,7 +8,7 @@ export class AppComponent {
 
     title = 'Customer App';
     name = 'Ward';
-    wardsColor = 'blue';
+    wardsColor = 'green';
     customers = [
       {id: 1,name: 'ward'},
       {id: 2,name: 'kevin'},
@@ -19,6 +19,6 @@ export class AppComponent {
     ];
 
     changeSuitColor() {
-      this.wardsColor = 'red';
+      this.wardsColor = this.wardsColor === 'green' ? 'red' : 'green';
     }
 }
