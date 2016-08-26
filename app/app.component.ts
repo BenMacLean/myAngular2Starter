@@ -1,14 +1,23 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core'
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html' 
+    templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
 
     title = 'Customer App';
     name = 'Ward';
     wardsColor = 'blue';
+    customers = [
+      {id: 1,name: 'ward'},
+      {id: 2,name: 'kevin'},
+      {id: 3,name: 'eric'},
+      {id: 4,name: 'john'},
+      {id: 5,name: 'emmet'},
+      {id: 6,name: 'sally'},
+    ];
+
     changeSuitColor() {
       this.wardsColor = 'red';
     }
