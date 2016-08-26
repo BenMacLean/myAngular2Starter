@@ -4,10 +4,9 @@
 </div>
 
 <ul>
-  <li *ngFor="#customer of customers">
-    <span [style.color] = "wardsColor">{{customer.id}}</span>
-  <span>{{customer.name}}</span>
-  </li>
+  <li *ngFor="#c of customers">
+    <app-customer [customer]="c"></app-customer>
+    </li>
 </ul>
 
 
