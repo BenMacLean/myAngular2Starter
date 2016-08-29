@@ -4,7 +4,7 @@ import { Component, OnInit } from 'angular2/core';
   selector: 'app-customers',
   templateUrl: 'app/customers/customers.component.html'
 })
-export class CustomersComponent imlements OnInit {
+export class CustomersComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
