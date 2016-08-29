@@ -1,11 +1,12 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, Input, OnInit} from '@angular/core'
 
-import {CustomerComponent} from './customer/customer.component';
+import {CustomerComponent} from './customer.component';
 
 
 @Component({
+  moduleId: __moduleName,
   selector: 'app-customers',
-  templateUrl: 'app/customers/customers.component.html',
+  templateUrl: 'customers.component.html',
   directives: [CustomerComponent]
 
 })
