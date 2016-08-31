@@ -4,12 +4,14 @@ import {CustomersComponent} from './customer/customers.component';
 
 import {CustomerService} from './customer/customer.service';
 
+import {HTTP_PROVIDERS} from '@angular/http';
+
 @Component({
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: 'app.component.html',
     directives: [CustomersComponent],
-    providers: [CustomerService]
+    providers: [CustomerService, HTTP_PROVIDERS]
 
 
 })
