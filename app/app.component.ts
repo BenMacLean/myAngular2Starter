@@ -11,7 +11,7 @@ import {HTTP_PROVIDERS} from '@angular/http';
     selector: 'my-app',
     templateUrl: 'app.component.html',
     directives: [CustomersComponent],
-    providers: [CustomerService, HTTP_PROVIDERS]
+    providers: [HTTP_PROVIDERS]
 
 
 })

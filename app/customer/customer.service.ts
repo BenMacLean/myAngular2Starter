@@ -1,8 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 import 'rxjs/add/operators/map';
-
-
+import {Observable} from 'rxjs/Rx';
 
 const URL_CUSTOMER = 'app/customers.json'
 
